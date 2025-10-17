@@ -17,10 +17,10 @@ object luke{
 }
 
 object alambiqueVeloz {
-    var rapido = true
+    const rapido = true
     var combustible = 20
     const consumoPorViaje = 10
-    var patente = "AB123JK"
+    const patente = "AB123JK"
     method puedeFuncionar() = combustible >= consumoPorViaje
     method desgaste() {
         combustible = combustible - consumoPorViaje
@@ -102,7 +102,7 @@ object hurlingham{
 
 object moto{
     method rapido() = true
-    method puedeFuncionar() = not moto.rapido()
+    method puedeFuncionar() = not self.rapido()
     method desgaste() { }
     method patenteValida() = false
 }
